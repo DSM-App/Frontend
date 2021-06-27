@@ -1,0 +1,4 @@
+The sole purpose of this file is to maintain user data like username, profile_pic which could be used to display at various places or used to generate URLs. 
+Eg: if user changes the username the link on profile icon will still point to old username URL, it needs to be updated. 
+Same issue with profile_pic as well. It is displayed at multiple places. We cannot check for stale data at every place. 
+So we use a global store variables for these and use the variables to generate URL's and update them everywhere they could possibly get updated.
