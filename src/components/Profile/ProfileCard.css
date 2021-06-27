@@ -1,0 +1,127 @@
+/* Profile container */
+
+.profile-container {
+  /* background-color: chocolate; */
+  height: 100%;
+  display: flex;
+}
+
+/* Profile card */
+
+.profile-card-container {
+  background-color: white;
+  height: 80vh;
+  width: 20vw;
+  margin: 3rem 1rem;
+  min-width: 300px;
+}
+
+.profile-card-container .profile-pic-container {
+  /* background-color: greenyellow; */
+  height: 25%;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.profile-card-container .profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.username-container {
+  /* background-color: hotpink; */
+}
+
+.profile-card-container .username {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 430;
+}
+
+.profile-card-container .fullname {
+  font-size: 1.2rem;
+  font-weight: 410;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-card-container .follow-post-count-container {
+  display: flex;
+  /* background-color: rgb(252, 227, 1); */
+  justify-content: space-around;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.profile-card-container .follow-post-count-item {
+  /* background-color: lightcoral; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* flex-grow: 1; */
+  /* border: 2px solid black; */
+  width: 80px;
+}
+
+.profile-card-container .count {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.profile-card-container .count-label {
+  font-size: 0.9rem;
+}
+
+.bio-container {
+  margin-top: 5px;
+  padding: 8px;
+  /* background-color: blueviolet; */
+}
+
+.bio-text {
+  font-size: 12px;
+  font-weight: 400;
+  /* line-height: 1.4rem; */
+  padding: 3px;
+  /* text-indent: 10px; */
+}
+
+/* Profile posts */
+
+.profile-posts {
+  /* background-color: darkcyan; */
+  flex-grow: 1;
+  margin: 1rem;
+}
+
+/* Edit profile icon */
+
+.edit-profile-icon {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  /* color: var(--clr-grey-5); */
+}
+
+/* In mobiles and some tablets */
+
+@media all and (max-width: 888px) {
+  .profile-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile-card-container {
+    width: auto;
+    margin: 0.5rem 0.5rem;
+  }
+
+  .profile-card-container .profile-pic-container {
+    height: 27%;
+  }
+}
