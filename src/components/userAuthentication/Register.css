@@ -1,0 +1,169 @@
+/* styles for register / login forms */
+
+/* We will use Roboto font */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+
+/* Overriding the default styles */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(243, 242, 242);
+  font-size: 16px;
+  color: #222;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+.register-container {
+  margin: 10% auto;
+  padding: 20px;
+  width: 60vw;
+  background-color: var(--clr-white);
+  border-radius: 2px;
+  box-shadow: var(--dark-shadow);
+  text-align: center;
+  max-width: 360px;
+  border-radius: var(--radius);
+}
+
+.register-form .form-heading {
+  margin: 20px;
+}
+
+.register-form .form-group {
+  margin-top: 20px;
+}
+
+.register-form .form-control {
+  display: block;
+  box-sizing: border-box;
+  width: 85%;
+  margin: 0 auto;
+  border: none;
+  border-bottom: 1px solid #aaa;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  transition: 0.2s ease;
+  padding: 5px;
+  letter-spacing: var(--spacing);
+  /* color: var(--clr-grey-8); */
+}
+
+.register-form input:focus {
+  outline: none;
+  border-bottom: 2px solid var(--clr-primary-6);
+  transition: 0.2s ease;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  /* color: var(--clr-grey-8); */
+  letter-spacing: var(--spacing);
+}
+
+.register-form .submit-btn {
+  background: var(--clr-primary-4);
+  border-color: transparent;
+  flex: 0 0 5rem;
+  display: grid;
+  align-items: center;
+  padding: 0.25rem;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  border-top-right-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+  cursor: pointer;
+  content: var(--clr-primary-8);
+  transition: var(--transition);
+  font-size: 0.85rem;
+  margin: 25px auto;
+}
+
+.register-form .submit-btn:hover {
+  background: var(--clr-primary-5);
+  color: var(--clr-white);
+}
+
+.register-form .error-message {
+  text-align: left;
+  margin: 0 auto;
+  width: 85%;
+  font-size: 0.7rem;
+  letter-spacing: 0.02rem;
+  color: rgb(202, 16, 16);
+  font-weight: 450;
+}
+
+.register-form .error-input {
+  border-bottom: 2px solid rgb(231, 78, 78);
+}
+
+.register-message {
+  font-size: 15px;
+  letter-spacing: 0.05rem;
+  font-weight: 400;
+}
+
+@media all and (max-width: 800px) {
+  .register-container {
+    margin: 25% auto;
+    width: 90vw;
+  }
+}
+
+/* For verify Email  */
+
+.verify-email-container {
+  margin: 5% auto;
+  padding: 20px;
+  width: 75vw;
+  background-color: var(--clr-white);
+  border-radius: 2px;
+  box-shadow: var(--dark-shadow);
+  text-align: center;
+  max-width: 750px;
+  border-radius: var(--radius);
+}
+
+.verify-email-container h3 {
+  color: var(--clr-grey-7);
+  font-weight: 500;
+}
+
+.verify-email-container h6 {
+  font-size: 1rem;
+  color: rgb(44, 131, 172);
+  letter-spacing: 0.1rem;
+  margin: 10px;
+}
+
+.verify-email-container .otp-container {
+  justify-content: center;
+  width: 100%;
+  margin: 5px auto;
+}
+
+.verify-email-container .otp-box {
+  width: 30px !important;
+  height: 40px;
+  align-self: center;
+  background-color: var(--clr-grey-1);
+}
+
+.verify-email-container .otp-error {
+  color: red;
+  font-weight: 500;
+}
+
+.otp-success,
+.signup-success {
+  color: green;
+  font-weight: 500;
+}
+
+@media all and (max-width: 800px) {
+  .verify-email-container {
+    margin: 25% auto;
+  }
+}
