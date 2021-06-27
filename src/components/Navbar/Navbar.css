@@ -1,0 +1,269 @@
+/* Navbar container styles */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  background-color: white;
+  /* font-family: 'Poppins', sans-serif; */
+  justify-content: space-around;
+  /* background-color: orange; */
+}
+
+/* Logo (text) styles */
+
+.logo {
+  color: rgb(37, 14, 14);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+  min-height: 26px; /* WARNING: Setting the hardcoded height here */
+}
+
+.logo h4 {
+  margin: 3px auto;
+}
+
+/* Nav links styles */
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 21%;
+  max-width: 245px;
+  margin: 15px;
+}
+
+.nav-icon-container {
+  width: auto;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  /* background-color: blue; */
+
+  /* background-color: cyan; */
+}
+
+.nav-icon {
+  font-size: 26px !important;
+  color: rgb(0, 0, 0);
+  font-weight: 300;
+}
+
+.nav-profile-pic {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+/* Desktop search bar styles */
+
+.search-bar {
+  display: flex;
+  height: 50%;
+  position: relative;
+  width: 246px;
+}
+
+.search-form {
+  width: 100%;
+}
+
+.search-input {
+  height: 100%;
+  padding: 3px;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgba(243, 242, 242);
+  border-radius: 25px;
+  width: 100%;
+  padding: 10px;
+  letter-spacing: var(--spacing);
+  border: none;
+}
+
+.search-placeholder-container {
+  position: absolute;
+  top: 7%;
+  left: 35%;
+}
+
+.search-submit-button {
+  width: 0px;
+  height: 0px;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.search-icon {
+  display: inline-block;
+  margin-right: 5px;
+  height: 80%;
+  margin-top: 2px;
+  color: var(--clr-grey-5);
+  font-size: 10px;
+}
+
+.placeholder-text {
+  color: var(--clr-grey-8);
+  font-size: 15px;
+}
+
+/* Desktop search bar focussed */
+
+.search-bar input:focus {
+  border: none;
+  outline: none;
+}
+
+.placeholder-text-active {
+  display: none;
+  transform: translateY(100%);
+}
+
+.search-placeholder-active {
+  left: 90% !important;
+}
+
+/* Nav links mobile */
+
+.nav-links-mobile {
+  min-width: 75px;
+  justify-content: space-around;
+  display: none;
+  /* background-color: greenyellow; */
+}
+
+/* Search bar mobile */
+
+.search-input-mobile {
+  width: 0px;
+  height: 0px;
+  border: none;
+  transition: 300ms;
+  background-color: rgba(243, 242, 242);
+  /* background-color: red; */
+}
+
+.search-icon-mobile {
+  transition: 300ms;
+}
+
+.search-submit-button-mobile {
+  width: 0px;
+  height: 0px;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.search-close-button-mobile {
+  position: absolute;
+  color: var(--clr-grey-5);
+  font-size: 13px;
+  right: 3%;
+  top: 25%;
+  display: none;
+}
+
+/*  Mobile search bar active */
+
+.nav-links-mobile {
+  padding: 3px;
+  height: 35px;
+  /* background-color: greenyellow; */
+}
+
+/* Mobile search bar active */
+
+.search-input-mobile-active {
+  width: 70vw;
+  height: 23px;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  padding-left: 25px;
+}
+
+.search-icon-mobile-active {
+  position: absolute;
+  top: 2%;
+  left: 5%;
+  display: inline-block;
+  margin-right: 5px;
+  height: 80%;
+  margin-top: 2px;
+  color: var(--clr-grey-5);
+  font-size: 10px !important;
+}
+
+.search-bar-mobile-active {
+  position: relative;
+}
+
+.search-close-button-mobile-active {
+  display: block;
+}
+
+/* Since nav-icon-container has fixed width we can't properly expand input. So we set the width to auto */
+.search-container-mobile {
+  width: auto;
+  margin-right: 10px;
+  height: auto;
+}
+
+.nav-link {
+  height: 100%;
+}
+
+/* Tablets */
+
+@media all and (max-width: 1100px) {
+  .search-bar {
+    max-width: 190px;
+  }
+
+  .nav-links {
+    width: 31%;
+  }
+}
+
+/* Mobiles */
+
+@media all and (max-width: 650px) {
+  .nav-links {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    max-width: 100%;
+    margin-bottom: 0px;
+    padding: 15px;
+  }
+
+  .drop-down {
+    display: none;
+  }
+
+  .search-bar {
+    display: none;
+  }
+
+  .nav-links-mobile {
+    display: flex;
+    margin-right: 2%;
+  }
+
+  .logo {
+    flex-grow: 1;
+    text-align: center;
+    /* background-color: green; */
+  }
+}
